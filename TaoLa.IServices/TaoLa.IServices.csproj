@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F1D3521-D7EE-45AA-A9E7-F012A8A28589}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaoLa.IServices</RootNamespace>
+    <AssemblyName>TaoLa.IServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheKeyCollection.cs" />
+    <Compile Include="IManagerService.cs" />
+    <Compile Include="IPrivilegesService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="IShopService.cs" />
+    <Compile Include="ISiteSettingService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryModel\AccountQuery.cs" />
+    <Compile Include="QueryModel\ApplyWithDrawQuery.cs" />
+    <Compile Include="QueryModel\CapitalDetailQuery.cs" />
+    <Compile Include="QueryModel\CapitalQuery.cs" />
+    <Compile Include="QueryModel\CashDepositDetailQuery.cs" />
+    <Compile Include="QueryModel\CashDepositQuery.cs" />
+    <Compile Include="QueryModel\ChargeQuery.cs" />
+    <Compile Include="QueryModel\CollocationQuery.cs" />
+    <Compile Include="QueryModel\CommentQuery.cs" />
+    <Compile Include="QueryModel\ComplaintQuery.cs" />
+    <Compile Include="QueryModel\ConsultationQuery.cs" />
+    <Compile Include="QueryModel\CouponQuery.cs" />
+    <Compile Include="QueryModel\CouponRecordQuery.cs" />
+    <Compile Include="QueryModel\DistributionQuery.cs" />
+    <Compile Include="QueryModel\DistributionShopQuery.cs" />
+    <Compile Include="QueryModel\DistributionUserBillQuery.cs" />
+    <Compile Include="QueryModel\FlashSaleQuery.cs" />
+    <Compile Include="QueryModel\GiftQuery.cs" />
+    <Compile Include="QueryModel\GiftsOrderQuery.cs" />
+    <Compile Include="QueryModel\IntegralQuery.cs" />
+    <Compile Include="QueryModel\IntegralRecordQuery.cs" />
+    <Compile Include="QueryModel\InviteRecordQuery.cs" />
+    <Compile Include="QueryModel\LabelQuery.cs" />
+    <Compile Include="QueryModel\LimitTimeQuery.cs" />
+    <Compile Include="QueryModel\ManagerQuery.cs" />
+    <Compile Include="QueryModel\MarketBoughtQuery.cs" />
+    <Compile Include="QueryModel\MemberQuery.cs" />
+    <Compile Include="QueryModel\OperationLogQuery.cs" />
+    <Compile Include="QueryModel\OrderCommentQuery.cs" />
+    <Compile Include="QueryModel\OrderQuery.cs" />
+    <Compile Include="QueryModel\ProductBrokerageQuery.cs" />
+    <Compile Include="QueryModel\ProductQuery.cs" />
+    <Compile Include="QueryModel\ProductSearch.cs" />
+    <Compile Include="QueryModel\ProformanceQuery.cs" />
+    <Compile Include="QueryModel\PromoterQuery.cs" />
+    <Compile Include="QueryModel\QueryBase.cs" />
+    <Compile Include="QueryModel\Quotation.cs" />
+    <Compile Include="QueryModel\RefundQuery.cs" />
+    <Compile Include="QueryModel\SellerQuery.cs" />
+    <Compile Include="QueryModel\SendRecordQuery.cs" />
+    <Compile Include="QueryModel\SensitiveWordQuery.cs" />
+    <Compile Include="QueryModel\ShopQuery.cs" />
+    <Compile Include="QueryModel\TopicQuery.cs" />
+    <Compile Include="QueryModel\UserProformanceQuery.cs" />
+    <Compile Include="QueryModel\VshopQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Himall.Entity\Himall.Entity.csproj">
+      <Project>{7558abe6-aa42-41c5-8126-0fffa73c2a54}</Project>
+      <Name>Himall.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Himall.Model\Himall.Model.csproj">
+      <Project>{493bad11-a977-4516-9297-f5fd28c4f5e4}</Project>
+      <Name>Himall.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaoLa.Core\TaoLa.Core.csproj">
+      <Project>{dc89a927-e63a-4f55-a0ac-6a138f52d07b}</Project>
+      <Name>TaoLa.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

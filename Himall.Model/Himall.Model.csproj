@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{493BAD11-A977-4516-9297-F5FD28C4F5E4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Himall.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Himall.Core">
+      <HintPath>..\Himall.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Himall.Model.DTO\AddShopHomeModuleModel.cs" />
+    <Compile Include="Himall.Model.DTO\AddShopHomeModuleProductModel.cs" />
+    <Compile Include="Himall.Model.DTO\AddShopHomeModuleTopImgModel.cs" />
+    <Compile Include="Himall.Model.Models\OrderCommentInfo.cs" />
+    <Compile Include="Himall.Model.Models\WXCategory.cs" />
+    <Compile Include="Himall.Model.WeiXin\WX_MsgTemplateLinkData.cs" />
+    <Compile Include="Himall.Model\AccountDetailInfo.cs" />
+    <Compile Include="Himall.Model\AccountInfo.cs" />
+    <Compile Include="Himall.Model\AccountMetaInfo.cs" />
+    <Compile Include="Himall.Model\AccountMetaModel.cs" />
+    <Compile Include="Himall.Model\AccountPurchaseAgreementInfo.cs" />
+    <Compile Include="Himall.Model\ActionItem.cs" />
+    <Compile Include="Himall.Model\ActiveMarketServiceInfo.cs" />
+    <Compile Include="Himall.Model\AdminPrivilege.cs" />
+    <Compile Include="Himall.Model\AgentProductsInfo.cs" />
+    <Compile Include="Himall.Model\AgreementInfo.cs" />
+    <Compile Include="Himall.Model\ApplyWithDrawInfo.cs" />
+    <Compile Include="Himall.Model\ApplyWithDrawModel.cs" />
+    <Compile Include="Himall.Model\ArticleCategoryInfo.cs" />
+    <Compile Include="Himall.Model\ArticleInfo.cs" />
+    <Compile Include="Himall.Model\AttributeInfo.cs" />
+    <Compile Include="Himall.Model\AttributeValueInfo.cs" />
+    <Compile Include="Himall.Model\BannerInfo.cs" />
+    <Compile Include="Himall.Model\BaseAdditionalCoupon.cs" />
+    <Compile Include="Himall.Model\BaseModel.cs" />
+    <Compile Include="Himall.Model\BonusInfo.cs" />
+    <Compile Include="Himall.Model\BonusReceiveInfo.cs" />
+    <Compile Include="Himall.Model\BrandInfo.cs" />
+    <Compile Include="Himall.Model\BrokerageIncomeInfo.cs" />
+    <Compile Include="Himall.Model\BrokerageModel.cs" />
+    <Compile Include="Himall.Model\BrokerageRefundInfo.cs" />
+    <Compile Include="Himall.Model\BrowsingHistoryInfo.cs" />
+    <Compile Include="Himall.Model\BusinessCategoryInfo.cs" />
+    <Compile Include="Himall.Model\CapitalDetailInfo.cs" />
+    <Compile Include="Himall.Model\CapitalDetailModel.cs" />
+    <Compile Include="Himall.Model\CapitalInfo.cs" />
+    <Compile Include="Himall.Model\CapitalModel.cs" />
+    <Compile Include="Himall.Model\CashDepositDetailInfo.cs" />
+    <Compile Include="Himall.Model\CashDepositInfo.cs" />
+    <Compile Include="Himall.Model\CashDepositsObligation.cs" />
+    <Compile Include="Himall.Model\CategoryCashDepositInfo.cs" />
+    <Compile Include="Himall.Model\CategoryInfo.cs" />
+    <Compile Include="Himall.Model\ChargeDetailInfo.cs" />
+    <Compile Include="Himall.Model\ChargeDetailModel.cs" />
+    <Compile Include="Himall.Model\ChartSeries.cs" />
+    <Compile Include="Himall.Model\CityMode.cs" />
+    <Compile Include="Himall.Model\CollocationDataModel.cs" />
+    <Compile Include="Himall.Model\CollocationInfo.cs" />
+    <Compile Include="Himall.Model\CollocationModel.cs" />
+    <Compile Include="Himall.Model\CollocationPoruductInfo.cs" />
+    <Compile Include="Himall.Model\CollocationPoruductModel.cs" />
+    <Compile Include="Himall.Model\CollocationProducts.cs" />
+    <Compile Include="Himall.Model\CollocationSkuInfo.cs" />
+    <Compile Include="Himall.Model\CollocationSkus.cs" />
+    <Compile Include="Himall.Model\CompanyEmployeeCount.cs" />
+    <Compile Include="Himall.Model\Controllers.cs" />
+    <Compile Include="Himall.Model\CountyMode.cs" />
+    <Compile Include="Himall.Model\CouponInfo.cs" />
+    <Compile Include="Himall.Model\CouponRecordInfo.cs" />
+    <Compile Include="Himall.Model\CouponSettingInfo.cs" />
+    <Compile Include="Himall.Model\CouponType.cs" />
+    <Compile Include="Himall.Model\CustomerServiceInfo.cs" />
+    <Compile Include="Himall.Model\DistributionFeatModel.cs" />
+    <Compile Include="Himall.Model\DistributionProductModel.cs" />
+    <Compile Include="Himall.Model\DistributionShareSetting.cs" />
+    <Compile Include="Himall.Model\DistributionShopModel.cs" />
+    <Compile Include="Himall.Model\DistributionUserLinkInfo.cs" />
+    <Compile Include="Himall.Model\DistributionUserPerformanceSetModel.cs" />
+    <Compile Include="Himall.Model\DistributorSettingInfo.cs" />
+    <Compile Include="Himall.Model\ExpressData.cs" />
+    <Compile Include="Himall.Model\ExpressDataItem.cs" />
+    <Compile Include="Himall.Model\FavoriteInfo.cs" />
+    <Compile Include="Himall.Model\FavoriteShopInfo.cs" />
+    <Compile Include="Himall.Model\FlashSaleConfigInfo.cs" />
+    <Compile Include="Himall.Model\FlashSaleConfigModel.cs" />
+    <Compile Include="Himall.Model\FlashSaleDetailInfo.cs" />
+    <Compile Include="Himall.Model\FlashSaleDetailModel.cs" />
+    <Compile Include="Himall.Model\FlashSaleInfo.cs" />
+    <Compile Include="Himall.Model\FlashSaleModel.cs" />
+    <Compile Include="Himall.Model\FlashSalePrice.cs" />
+    <Compile Include="Himall.Model\FlashSaleRemindInfo.cs" />
+    <Compile Include="Himall.Model\FloorBrandInfo.cs" />
+    <Compile Include="Himall.Model\FloorCategoryInfo.cs" />
+    <Compile Include="Himall.Model\FloorProductInfo.cs" />
+    <Compile Include="Himall.Model\FloorTablDetailsInfo.cs" />
+    <Compile Include="Himall.Model\FloorTablsInfo.cs" />
+    <Compile Include="Himall.Model\FloorTopicInfo.cs" />
+    <Compile Include="Himall.Model\FollowProduct.cs" />
+    <Compile Include="Himall.Model\FollowShop.cs" />
+    <Compile Include="Himall.Model\FollowShopCart.cs" />
+    <Compile Include="Himall.Model\FreightAreaContentInfo.cs" />
+    <Compile Include="Himall.Model\FreightTemplateInfo.cs" />
+    <Compile Include="Himall.Model\GiftInfo.cs" />
+    <Compile Include="Himall.Model\GiftModel.cs" />
+    <Compile Include="Himall.Model\GiftOrderInfo.cs" />
+    <Compile Include="Himall.Model\GiftOrderItemInfo.cs" />
+    <Compile Include="Himall.Model\GiftOrderItemModel.cs" />
+    <Compile Include="Himall.Model\GiftOrderModel.cs" />
+    <Compile Include="Himall.Model\GroupActionItem.cs" />
+    <Compile Include="Himall.Model\HandSlideAdInfo.cs" />
+    <Compile Include="Himall.Model\HomeCategoryInfo.cs" />
+    <Compile Include="Himall.Model\HomeCategoryRowInfo.cs" />
+    <Compile Include="Himall.Model\HomeCategorySet.cs" />
+    <Compile Include="Himall.Model\HomeFloorInfo.cs" />
+    <Compile Include="Himall.Model\IBaseCoupon.cs" />
+    <Compile Include="Himall.Model\ImageAdInfo.cs" />
+    <Compile Include="Himall.Model\IManager.cs" />
+    <Compile Include="Himall.Model\InviteRecordInfo.cs" />
+    <Compile Include="Himall.Model\InviteRuleInfo.cs" />
+    <Compile Include="Himall.Model\InviteRuleModel.cs" />
+    <Compile Include="Himall.Model\InvoiceContextInfo.cs" />
+    <Compile Include="Himall.Model\InvoiceTitleInfo.cs" />
+    <Compile Include="Himall.Model\InvoiceType.cs" />
+    <Compile Include="Himall.Model\IPaltManager.cs" />
+    <Compile Include="Himall.Model\IPDataModel.cs" />
+    <Compile Include="Himall.Model\ISellerManager.cs" />
+    <Compile Include="Himall.Model\LabelInfo.cs" />
+    <Compile Include="Himall.Model\LimitTimeBuySettingModel.cs" />
+    <Compile Include="Himall.Model\LimitTimeMarketInfo.cs" />
+    <Compile Include="Himall.Model\LineChartDataModel.cs" />
+    <Compile Include="Himall.Model\LogInfo.cs" />
+    <Compile Include="Himall.Model\ManagerInfo.cs" />
+    <Compile Include="Himall.Model\MapChartDataModel.cs" />
+    <Compile Include="Himall.Model\MapChartSeries.cs" />
+    <Compile Include="Himall.Model\MapChartSeriesData.cs" />
+    <Compile Include="Himall.Model\MarketServiceRecordInfo.cs" />
+    <Compile Include="Himall.Model\MarketSettingInfo.cs" />
+    <Compile Include="Himall.Model\MarketSettingMetaInfo.cs" />
+    <Compile Include="Himall.Model\MarketType.cs" />
+    <Compile Include="Himall.Model\MediaItemCount.cs" />
+    <Compile Include="Himall.Model\MediaNewsItem.cs" />
+    <Compile Include="Himall.Model\MediaNewsItemList.cs" />
+    <Compile Include="Himall.Model\MemberAccountSafety.cs" />
+    <Compile Include="Himall.Model\MemberContactsInfo.cs" />
+    <Compile Include="Himall.Model\MemberGrade.cs" />
+    <Compile Include="Himall.Model\MemberIntegral.cs" />
+    <Compile Include="Himall.Model\MemberIntegralExchangeRules.cs" />
+    <Compile Include="Himall.Model\MemberIntegralRecord.cs" />
+    <Compile Include="Himall.Model\MemberIntegralRecordAction.cs" />
+    <Compile Include="Himall.Model\MemberIntegralRule.cs" />
+    <Compile Include="Himall.Model\MemberLabelInfo.cs" />
+    <Compile Include="Himall.Model\MemberOpenIdInfo.cs" />
+    <Compile Include="Himall.Model\MemberSignInInfo.cs" />
+    <Compile Include="Himall.Model\MenuInfo.cs" />
+    <Compile Include="Himall.Model\MessageLog.cs" />
+    <Compile Include="Himall.Model\MobileHomeProductsInfo.cs" />
+    <Compile Include="Himall.Model\MobileHomeTopicsInfo.cs" />
+    <Compile Include="Himall.Model\ModuleProductInfo.cs" />
+    <Compile Include="Himall.Model\MsgType.cs" />
+    <Compile Include="Himall.Model\OAuthUserModel.cs" />
+    <Compile Include="Himall.Model\OpenIdsInfo.cs" />
+    <Compile Include="Himall.Model\OrderCommentInfo.cs" />
+    <Compile Include="Himall.Model\OrderComplaintInfo.cs" />
+    <Compile Include="Himall.Model\OrderCreateAdditional.cs" />
+    <Compile Include="Himall.Model\OrderCreateModel.cs" />
+    <Compile Include="Himall.Model\OrderDimension.cs" />
+    <Compile Include="Himall.Model\OrderInfo.cs" />
+    <Compile Include="Himall.Model\OrderItemInfo.cs" />
+    <Compile Include="Himall.Model\OrderOperationLogInfo.cs" />
+    <Compile Include="Himall.Model\OrderPayInfo.cs" />
+    <Compile Include="Himall.Model\OrderRefundInfo.cs" />
+    <Compile Include="Himall.Model\PageModel.cs" />
+    <Compile Include="Himall.Model\PaymentConfigInfo.cs" />
+    <Compile Include="Himall.Model\PaymentType.cs" />
+    <Compile Include="Himall.Model\PhotoSpaceCategoryInfo.cs" />
+    <Compile Include="Himall.Model\PhotoSpaceInfo.cs" />
+    <Compile Include="Himall.Model\PlatConsoleModel.cs" />
+    <Compile Include="Himall.Model\Position.cs" />
+    <Compile Include="Himall.Model\PrivilegeAttribute.cs" />
+    <Compile Include="Himall.Model\Privileges.cs" />
+    <Compile Include="Himall.Model\ProductAttributeInfo.cs" />
+    <Compile Include="Himall.Model\ProductBrokerageInfo.cs" />
+    <Compile Include="Himall.Model\ProductCommentInfo.cs" />
+    <Compile Include="Himall.Model\ProductConsultationInfo.cs" />
+    <Compile Include="Himall.Model\ProductDescriptionInfo.cs" />
+    <Compile Include="Himall.Model\ProductDescriptionTemplateInfo.cs" />
+    <Compile Include="Himall.Model\ProductEvaluation.cs" />
+    <Compile Include="Himall.Model\ProductInfo.cs" />
+    <Compile Include="Himall.Model\ProductsDistributionModel.cs" />
+    <Compile Include="Himall.Model\ProductShopCategoryInfo.cs" />
+    <Compile Include="Himall.Model\ProductSkuModel.cs" />
+    <Compile Include="Himall.Model\ProductTypeInfo.cs" />
+    <Compile Include="Himall.Model\ProductVistiInfo.cs" />
+    <Compile Include="Himall.Model\ProformanceModel.cs" />
+    <Compile Include="Himall.Model\PromoterInfo.cs" />
+    <Compile Include="Himall.Model\PromoterModel.cs" />
+    <Compile Include="Himall.Model\PromoterStatistics.cs" />
+    <Compile Include="Himall.Model\ProvinceMode.cs" />
+    <Compile Include="Himall.Model\QR_SCENE_Type.cs" />
+    <Compile Include="Himall.Model\ReceiveModel.cs" />
+    <Compile Include="Himall.Model\ReceiveStatus.cs" />
+    <Compile Include="Himall.Model\ReceivingAddressInfo.cs" />
+    <Compile Include="Himall.Model\RecruitPlanInfo.cs" />
+    <Compile Include="Himall.Model\RecruitSettingInfo.cs" />
+    <Compile Include="Himall.Model\RoleInfo.cs" />
+    <Compile Include="Himall.Model\RolePrivilegeInfo.cs" />
+    <Compile Include="Himall.Model\SaleDimension.cs" />
+    <Compile Include="Himall.Model\SceneModel.cs" />
+    <Compile Include="Himall.Model\SearchProductModel.cs" />
+    <Compile Include="Himall.Model\SellerConsoleModel.cs" />
+    <Compile Include="Himall.Model\SellerPrivilege.cs" />
+    <Compile Include="Himall.Model\SellerSpecificationValueInfo.cs" />
+    <Compile Include="Himall.Model\SendInfoResult.cs" />
+    <Compile Include="Himall.Model\SendMessageRecordInfo.cs" />
+    <Compile Include="Himall.Model\SendMsgInfo.cs" />
+    <Compile Include="Himall.Model\SendToUserLabel.cs" />
+    <Compile Include="Himall.Model\SensitiveWordsInfo.cs" />
+    <Compile Include="Himall.Model\ShippingAddressInfo.cs" />
+    <Compile Include="Himall.Model\ShopBonusGrantInfo.cs" />
+    <Compile Include="Himall.Model\ShopBonusInfo.cs" />
+    <Compile Include="Himall.Model\ShopBonusReceiveInfo.cs" />
+    <Compile Include="Himall.Model\ShopBrandApplysInfo.cs" />
+    <Compile Include="Himall.Model\ShopBrandsInfo.cs" />
+    <Compile Include="Himall.Model\ShopCategoryInfo.cs" />
+    <Compile Include="Himall.Model\ShopDimension.cs" />
+    <Compile Include="Himall.Model\ShopDistributorSettingInfo.cs" />
+    <Compile Include="Himall.Model\ShopFooterInfo.cs" />
+    <Compile Include="Himall.Model\ShopGradeInfo.cs" />
+    <Compile Include="Himall.Model\ShopHomeModuleInfo.cs" />
+    <Compile Include="Himall.Model\ShopHomeModuleProductInfo.cs" />
+    <Compile Include="Himall.Model\ShopHomeModulesTopImgInfo.cs" />
+    <Compile Include="Himall.Model\ShopInfo.cs" />
+    <Compile Include="Himall.Model\ShoppingCartInfo.cs" />
+    <Compile Include="Himall.Model\ShoppingCartItem.cs" />
+    <Compile Include="Himall.Model\ShoppingCartItemInfo.cs" />
+    <Compile Include="Himall.Model\ShopReceiveModel.cs" />
+    <Compile Include="Himall.Model\ShopReceiveStatus.cs" />
+    <Compile Include="Himall.Model\ShopVistiInfo.cs" />
+    <Compile Include="Himall.Model\SiteSettingsInfo.cs" />
+    <Compile Include="Himall.Model\SiteSignInConfigInfo.cs" />
+    <Compile Include="Himall.Model\SKUInfo.cs" />
+    <Compile Include="Himall.Model\SKUModel.cs" />
+    <Compile Include="Himall.Model\SlideAdInfo.cs" />
+    <Compile Include="Himall.Model\SpecificationType.cs" />
+    <Compile Include="Himall.Model\SpecificationValueInfo.cs" />
+    <Compile Include="Himall.Model\StatisticOrderCommentsInfo.cs" />
+    <Compile Include="Himall.Model\TemplateVisualizationSettingsInfo.cs" />
+    <Compile Include="Himall.Model\TopicInfo.cs" />
+    <Compile Include="Himall.Model\TopicModuleInfo.cs" />
+    <Compile Include="Himall.Model\TypeAttributesModel.cs" />
+    <Compile Include="Himall.Model\TypeAttrValue.cs" />
+    <Compile Include="Himall.Model\TypeBrandInfo.cs" />
+    <Compile Include="Himall.Model\UserCenterModel.cs" />
+    <Compile Include="Himall.Model\UserCouponInfo.cs" />
+    <Compile Include="Himall.Model\UserIntegralGroupModel.cs" />
+    <Compile Include="Himall.Model\UserInviteModel.cs" />
+    <Compile Include="Himall.Model\UserMemberInfo.cs" />
+    <Compile Include="Himall.Model\UserPrivilege.cs" />
+    <Compile Include="Himall.Model\UserProformanceModel.cs" />
+    <Compile Include="Himall.Model\VShopExtendInfo.cs" />
+    <Compile Include="Himall.Model\VShopInfo.cs" />
+    <Compile Include="Himall.Model\WeiXinBasicInfo.cs" />
+    <Compile Include="Himall.Model\WeiXinMsgTemplateInfo.cs" />
+    <Compile Include="Himall.Model\WXAccTokenInfo.cs" />
+    <Compile Include="Himall.Model\WXCardCodeLogInfo.cs" />
+    <Compile Include="Himall.Model\WXCardLogInfo.cs" />
+    <Compile Include="Himall.Model\WXJSCardExtModel.cs" />
+    <Compile Include="Himall.Model\WXJSCardModel.cs" />
+    <Compile Include="Himall.Model\WxJsonResult.cs" />
+    <Compile Include="Himall.Model\WXMaterialInfo.cs" />
+    <Compile Include="Himall.Model\WXMsgType.cs" />
+    <Compile Include="Himall.Model\WXShopInfo.cs" />
+    <Compile Include="Himall.Model\WXSyncJSInfoByCard.cs" />
+    <Compile Include="Himall.Model\WXSyncJSInfoCardInfo.cs" />
+    <Compile Include="Himall.Model\WXUploadNewsResult.cs" />
+    <Compile Include="Himall.Model\WX_MSGGetCouponModel.cs" />
+    <Compile Include="Himall.Model\WX_MSGItemBaseModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey1DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey2DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey3DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey4DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey5DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateKey6DataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateRefundDataModel.cs" />
+    <Compile Include="Himall.Model\WX_MsgTemplateSendDataModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

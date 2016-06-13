@@ -1,0 +1,6 @@
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\bin\Debug\TaoLa.AOPProxy.dll
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\bin\Debug\TaoLa.AOPProxy.pdb
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\bin\Debug\Newtonsoft.Json.dll
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\obj\Debug\TaoLa.AOPProxy.csprojResolveAssemblyReference.cache
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\obj\Debug\TaoLa.AOPProxy.dll
+E:\Alex\TaoLaMall\TaoLa.AOPProxy\obj\Debug\TaoLa.AOPProxy.pdb
