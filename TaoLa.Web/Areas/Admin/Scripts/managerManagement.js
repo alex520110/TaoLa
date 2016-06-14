@@ -16,7 +16,7 @@ function Delete(id) {
     });
 }
 function BatchDelete() {
-    var selectedRows = $("#list").hiMallDatagrid("getSelections");
+    var selectedRows = $("#list").TaoLaDatagrid("getSelections");
     var selectids = new Array();
 
     for (var i = 0; i < selectedRows.length; i++) {
@@ -173,8 +173,8 @@ function LoadAddBox() {
                 return false;
             }
             if (!CheckAdd(username, password))
-                return false;
-            AddManage(username, password, roleId);
+                return false;Add
+            AddManage(username, password, 1);
         }
     });
 }

@@ -6,10 +6,12 @@ using System.Web;
 using System.Web.Mvc;
 using TaoLa.IServices;
 using TaoLa.IServices.QueryModel;
+using TaoLa.Web.Areas.Admin.Models;
+using TaoLa.Web.Framework;
 
 namespace TaoLa.Web.Areas.Admin.Controllers
 {
-    public class ManagerController : Controller
+    public class ManagerController : BaseAdminController
     {
         private IManagerService _iManagerService;
 
@@ -61,7 +63,10 @@ namespace TaoLa.Web.Areas.Admin.Controllers
             return base.Json(variable);
         }
 
-
+        /// <summary>
+        /// 获取 平台角色
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public JsonResult RoleList()
         {
@@ -69,6 +74,94 @@ namespace TaoLa.Web.Areas.Admin.Controllers
                 from item in this._iPrivilegesService.GetPlatformRoles()
                 select new { Id = item.Id, RoleName = item.RoleName };
             return base.Json(platformRoles);
+        }
+        /// <summary>
+        /// 检查 用户名是否存在
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public JsonResult IsExistsUserName(string userName)
+        {
+            JsonResult jsonResult = base.Json(new { Exists = this._iManagerService.CheckUserNameExist(userName, false) });
+            return jsonResult;
+        }
+        /// <summary>
+        /// 添加用户
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public JsonResult Add(ManagerInfoModel model)
+        {
+            ManagerInfo managerInfo = new ManagerInfo()
+            {
+                UserName = model.UserName,
+                Password = model.Password,
+                RoleId = model.RoleId
+            };
+            this._iManagerService.AddPlatformManager(managerInfo);
+            BaseController.Result result = new BaseController.Result()
+            {
+                success = true,
+                msg = "添加成功！"
+            };
+            return base.Json(result);
+        }
+
+        /// <summary>
+        /// 批量删除
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonResult BatchDelete(string ids)
+        {
+            string[] strArrays = ids.Split(new char[] { ',' });
+            List<long> nums = new List<long>();
+            string[] strArrays1 = strArrays;
+            for (int i = 0; i < (int)strArrays1.Length; i++)
+            {
+                nums.Add(Convert.ToInt64(strArrays1[i]));
+            }
+            this._iManagerService.BatchDeletePlatformManager(nums.ToArray());
+            BaseController.Result result = new BaseController.Result()
+            {
+                success = true,
+                msg = "批量删除成功！"
+            };
+            return base.Json(result);
+        }
+        /// <summary>
+        /// 单个删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonResult Delete(long id)
+        {
+            this._iManagerService.DeletePlatformManager(id);
+            BaseController.Result result = new BaseController.Result()
+            {
+                success = true,
+                msg = "删除成功！"
+            };
+            return base.Json(result);
+        }
+        /// <summary>
+        /// 修改密码
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="password"></param>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public JsonResult ChangePassWord(long id, string password, long roleId)
+        {
+            this._iManagerService.ChangePlatformManagerPassword(id, password, roleId);
+            BaseController.Result result = new BaseController.Result()
+            {
+                success = true,
+                msg = "修改成功！"
+            };
+            return base.Json(result);
         }
     }
 }

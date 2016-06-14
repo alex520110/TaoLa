@@ -1,9 +1,9 @@
-﻿/// <reference path="../../../Scripts/jqeury.himallLinkage.js" />
+﻿/// <reference path="../../../Scripts/jqeury.TaoLaLinkage.js" />
 var categoryId;
 $(function () {
 
 
-    $('#category1,#category2,#category3').himallLinkage({
+    $('#category1,#category2,#category3').TaoLaLinkage({
         url: '../category/getCategory',
         enableDefaultItem: true,
         defaultItemsText: '全部',
@@ -27,7 +27,7 @@ $(function () {
             }
         });
 
-        $("#list").hiMallDatagrid({
+        $("#list").TaoLaDatagrid({
             url: './list',
             nowrap: false,
             rownumbers: true,
@@ -162,7 +162,7 @@ $(function () {
             $('#divAudit').hide();
             $('#divList').show();
             typeChoose($(this).attr('value') || null);
-            // $("#list").hiMallDatagrid('reload', { auditStatus: $(this).attr('value') || null, brandName: '', keyWords: ''});
+            // $("#list").TaoLaDatagrid('reload', { auditStatus: $(this).attr('value') || null, brandName: '', keyWords: ''});
         }
         else if ($(this).attr('type') == 'audit-on-off') {
             $.post('GetProductAuditOnOff', {}, function (result) {
@@ -212,7 +212,7 @@ function batchAuditProduct() {
 
 
 function getSelectedIds() {
-    var selecteds = $("#list").hiMallDatagrid('getSelections');
+    var selecteds = $("#list").TaoLaDatagrid('getSelections');
     var ids = [];
     $.each(selecteds, function () {
         if (this.state == "销售中") {
@@ -223,7 +223,7 @@ function getSelectedIds() {
 }
 
 function getWaitForAuditingSelIds() {
-    var selecteds = $("#list").hiMallDatagrid('getSelections');
+    var selecteds = $("#list").TaoLaDatagrid('getSelections');
     var ids = [];
     $.each(selecteds, function () {
         if (this.state == "待审核") {
@@ -239,7 +239,7 @@ function search() {
     var keyWords = $.trim($('#searchBox').val());
     var productId = $.trim($('#productId').val());
     var shopName = $.trim($('#shopName').val());
-    $("#list").hiMallDatagrid('reload', { brandName: brandName, keyWords: keyWords, categoryId: categoryId, productCode: productId, shopName: shopName });
+    $("#list").TaoLaDatagrid('reload', { brandName: brandName, keyWords: keyWords, categoryId: categoryId, productCode: productId, shopName: shopName });
 }
 
 function audit(productId) {
@@ -334,8 +334,8 @@ function auditProduct(productIds, auditState, msg) {
     $.post('./BatchAudit', { productIds: productIds.toString(), auditState: auditState, message: msg }, function (result) {
         if (result.success) {
             $.dialog.succeedTips("操作成功！");
-            var pageNo = $("#list").hiMallDatagrid('options').pageNumber;
-            $("#list").hiMallDatagrid('reload', { pageNumber: pageNo });
+            var pageNo = $("#list").TaoLaDatagrid('options').pageNumber;
+            $("#list").TaoLaDatagrid('reload', { pageNumber: pageNo });
         }
         else {
             $.dialog.errorTips("操作失败");

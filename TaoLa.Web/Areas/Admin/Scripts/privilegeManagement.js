@@ -1,5 +1,5 @@
-﻿/// <reference path="E:\Projects\HiMall\trunk\src\Web\Himall.Web\Scripts/jquery-1.11.1.js" />
-/// <reference path="E:\Projects\HiMall\trunk\src\Web\Himall.Web\Scripts/jquery.hiMallDatagrid.js" />
+﻿/// <reference path="E:\Projects\TaoLa\trunk\src\Web\TaoLa.Web\Scripts/jquery-1.11.1.js" />
+/// <reference path="E:\Projects\TaoLa\trunk\src\Web\TaoLa.Web\Scripts/jquery.TaoLaDatagrid.js" />
 
 
 $(function () {
@@ -14,7 +14,7 @@ function Delete(id) {
 }
 
 function query() {
-    $("#list").hiMallDatagrid({
+    $("#list").TaoLaDatagrid({
         url: './list',
         nowrap: false,
         rownumbers: true,

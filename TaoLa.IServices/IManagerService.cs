@@ -31,5 +31,51 @@ namespace TaoLa.IServices
         /// <param name="query"></param>
         /// <returns></returns>
         PageModel<ManagerInfo> GetPlatformManagers(ManagerQuery query);
+
+        /// <summary>
+        /// 检查用户名是否存在
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="isPlatFormManager"></param>
+        /// <returns></returns>
+        bool CheckUserNameExist(string userName, bool isPlatFormManager = false);
+
+        /// <summary>
+        /// 添加平台用户
+        /// </summary>
+        /// <param name="model"></param>
+        void AddPlatformManager(ManagerInfo model);
+
+        /// <summary>
+        /// 单个删除平台用户
+        /// </summary>
+        /// <param name="id"></param>
+        void DeletePlatformManager(long id);
+
+        /// <summary>
+        /// 单个删除店铺用户
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="shopId"></param>
+        void DeleteSellerManager(long id, long shopId);
+        /// <summary>
+        /// 批量删除平台用户
+        /// </summary>
+        /// <param name="ids"></param>
+        void BatchDeletePlatformManager(long[] ids);
+        /// <summary>
+        /// 批量删除店铺用户
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <param name="shopId"></param>
+        void BatchDeleteSellerManager(long[] ids, long shopId);
+
+        /// <summary>
+        /// 修改平台用户密码
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="password"></param>
+        /// <param name="roleId"></param>
+        void ChangePlatformManagerPassword(long id, string password, long roleId);
     }
 }
