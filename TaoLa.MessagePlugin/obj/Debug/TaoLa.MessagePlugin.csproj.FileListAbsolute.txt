@@ -1,0 +1,4 @@
+E:\Alex\TaoLaMall\TaoLa.MessagePlugin\bin\Debug\TaoLa.MessagePlugin.dll
+E:\Alex\TaoLaMall\TaoLa.MessagePlugin\bin\Debug\TaoLa.MessagePlugin.pdb
+E:\Alex\TaoLaMall\TaoLa.MessagePlugin\obj\Debug\TaoLa.MessagePlugin.dll
+E:\Alex\TaoLaMall\TaoLa.MessagePlugin\obj\Debug\TaoLa.MessagePlugin.pdb

@@ -726,6 +726,13 @@
     <Content Include="Areas\Admin\Views\SiteSetting\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Manager\Management.cshtml" />
     <Content Include="Areas\Admin\Views\Privilege\management.cshtml" />
+    <Content Include="Areas\Admin\Views\Privilege\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Privilege\add.cshtml" />
+    <Content Include="Areas\Admin\Views\OperationLog\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\Message\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\Agreement\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\member\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\member\Detail.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1056,12 +1063,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AgreementController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MemberController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MessageController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OperationLogController.cs" />
     <Compile Include="Areas\Admin\Controllers\PrivilegeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SiteSettingController.cs" />
     <Compile Include="Areas\Admin\Models\ManagerInfoModel.cs" />
+    <Compile Include="Areas\Admin\Models\RoleInfoModel.cs" />
     <Compile Include="Areas\Admin\Models\SiteSettingModel.cs" />
     <Compile Include="Areas\SellerAdmin\SellerAdminAreaRegistration.cs" />
     <Compile Include="Areas\Web\WebAreaRegistration.cs" />
@@ -1073,6 +1085,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AgreementModel.cs" />
+    <Compile Include="Models\DataGridModel.cs" />
+    <Compile Include="Models\MemberModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1122,7 +1137,6 @@
     <Folder Include="Areas\Web\Models\" />
     <Folder Include="Areas\Web\Views\Shared\" />
     <Folder Include="Log\" />
-    <Folder Include="Models\" />
     <Folder Include="Plugins\" />
     <Folder Include="Views\PublicOperation\" />
   </ItemGroup>

@@ -77,7 +77,7 @@ function UnLock(id) {
 }
 
 function BatchLock() {
-    var selectedRows = $("#list").hiMallDatagrid("getSelections");
+    var selectedRows = $("#list").TaoLaDatagrid("getSelections");
  
 
     if (selectedRows.length == 0) {
@@ -96,7 +96,7 @@ function BatchLock() {
 }
 
 function BatchDelete() {
-    var selectedRows = $("#list").hiMallDatagrid("getSelections");
+    var selectedRows = $("#list").TaoLaDatagrid("getSelections");
     var selectids = new Array();
 
     for (var i = 0; i < selectedRows.length; i++) {
@@ -130,7 +130,7 @@ function query() {
     if ($('#labelSelect').val() > 0) {
         labelid = $('#labelSelect').val();
     }
-    $("#list").hiMallDatagrid({
+    $("#list").TaoLaDatagrid({
         url: './list',
         nowrap: false,
         rownumbers: true,
@@ -238,7 +238,7 @@ function AddLabel(memberid)
 }
 
 function batchAddLabels() {
-    var selecteds = $("#list").hiMallDatagrid('getSelections');
+    var selecteds = $("#list").TaoLaDatagrid('getSelections');
     var ids = [];
     $.each(selecteds, function () {
         ids.push(this.Id);

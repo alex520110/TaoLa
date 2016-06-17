@@ -77,5 +77,10 @@ namespace TaoLa.IServices
         /// <param name="password"></param>
         /// <param name="roleId"></param>
         void ChangePlatformManagerPassword(long id, string password, long roleId);
+
+
+        IQueryable<ManagerInfo> GetPlatformManagerByRoleId(long roleId);
+
+        IQueryable<ManagerInfo> GetManagers(string keyWords);
     }
 }

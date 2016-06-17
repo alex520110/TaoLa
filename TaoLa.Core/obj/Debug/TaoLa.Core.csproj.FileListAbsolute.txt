@@ -22,6 +22,6 @@ E:\Alex\TaoLaMall\TaoLa.Core\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
 E:\Alex\TaoLaMall\TaoLa.Core\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
 E:\Alex\TaoLaMall\TaoLa.Core\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 E:\Alex\TaoLaMall\TaoLa.Core\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\Alex\TaoLaMall\TaoLa.Core\obj\Debug\TaoLa.Core.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.Core\obj\Debug\TaoLa.Core.dll
 E:\Alex\TaoLaMall\TaoLa.Core\obj\Debug\TaoLa.Core.pdb
-E:\Alex\TaoLaMall\TaoLa.Core\obj\Debug\TaoLa.Core.csprojResolveAssemblyReference.cache

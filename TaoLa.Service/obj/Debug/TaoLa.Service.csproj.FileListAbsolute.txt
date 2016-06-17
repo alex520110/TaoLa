@@ -32,4 +32,3 @@ E:\Alex\TaoLaMall\TaoLa.Service\bin\Debug\zh-Hans\System.Web.WebPages.Deployment
 E:\Alex\TaoLaMall\TaoLa.Service\obj\Debug\TaoLa.Service.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.Service\obj\Debug\TaoLa.Service.dll
 E:\Alex\TaoLaMall\TaoLa.Service\obj\Debug\TaoLa.Service.pdb
-E:\Alex\TaoLaMall\TaoLa.Service\bin\Debug\Himall.Core.dll

@@ -230,5 +230,21 @@ namespace TaoLa.Service
             this.context.SaveChanges();
             Cache.Remove(CacheKeyCollection.Manager(id));
         }
+
+        public IQueryable<ManagerInfo> GetPlatformManagerByRoleId(long roleId)
+        {
+            IQueryable<ManagerInfo> managerInfos = this.context.ManagerInfo.FindBy<ManagerInfo>((ManagerInfo item) => item.ShopId == (long)0 && item.RoleId == roleId);
+
+           
+
+            return managerInfos;
+        }
+
+        public IQueryable<ManagerInfo> GetManagers(string keyWords)
+        {
+            IQueryable<ManagerInfo> managerInfos = this.context.ManagerInfo.FindBy<ManagerInfo>((ManagerInfo item) => keyWords == null || (keyWords == "") || item.UserName.Contains(keyWords));
+            return managerInfos;
+        }
+
     }
 }

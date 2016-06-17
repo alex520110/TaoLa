@@ -37,4 +37,3 @@ E:\Alex\TaoLaMall\TaoLa.Web.Framework\bin\Debug\zh-Hans\System.Web.WebPages.Depl
 E:\Alex\TaoLaMall\TaoLa.Web.Framework\obj\Debug\TaoLa.Web.Framework.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.Web.Framework\obj\Debug\TaoLa.Web.Framework.dll
 E:\Alex\TaoLaMall\TaoLa.Web.Framework\obj\Debug\TaoLa.Web.Framework.pdb
-E:\Alex\TaoLaMall\TaoLa.Web.Framework\bin\Debug\Himall.Core.dll

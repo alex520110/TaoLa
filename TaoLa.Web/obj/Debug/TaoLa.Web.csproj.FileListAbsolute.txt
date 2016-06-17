@@ -16,12 +16,16 @@ E:\Alex\TaoLaMall\TaoLa.Web\bin\TaoLa.Web.pdb
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Autofac.Configuration.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Autofac.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Autofac.Integration.Mvc.dll
+E:\Alex\TaoLaMall\TaoLa.Web\bin\AutoMapper.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\EntityFramework.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\EntityFramework.SqlServer.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Himall.Entity.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Himall.Model.dll
+E:\Alex\TaoLaMall\TaoLa.Web\bin\Himall.Strategy.AspNetCache.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Alex\TaoLaMall\TaoLa.Web\bin\MySql.Data.dll
+E:\Alex\TaoLaMall\TaoLa.Web\bin\MySql.Data.Entity.EF6.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\Newtonsoft.Json.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\System.Net.Http.Formatting.dll
 E:\Alex\TaoLaMall\TaoLa.Web\bin\System.Web.Helpers.dll
@@ -70,8 +74,3 @@ E:\Alex\TaoLaMall\TaoLa.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
 E:\Alex\TaoLaMall\TaoLa.Web\obj\Debug\TaoLa.Web.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.Web\obj\Debug\TaoLa.Web.dll
 E:\Alex\TaoLaMall\TaoLa.Web\obj\Debug\TaoLa.Web.pdb
-E:\Alex\TaoLaMall\TaoLa.Web\bin\AutoMapper.dll
-E:\Alex\TaoLaMall\TaoLa.Web\bin\Himall.Strategy.AspNetCache.dll
-E:\Alex\TaoLaMall\TaoLa.Web\bin\Himall.Core.dll
-E:\Alex\TaoLaMall\TaoLa.Web\bin\MySql.Data.dll
-E:\Alex\TaoLaMall\TaoLa.Web\bin\MySql.Data.Entity.EF6.dll

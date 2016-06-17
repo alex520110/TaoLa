@@ -1,4 +1,4 @@
-using Himall.Core;
+using TaoLa.Core;
 using System;
 
 namespace Himall.Model

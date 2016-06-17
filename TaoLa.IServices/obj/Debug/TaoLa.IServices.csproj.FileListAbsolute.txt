@@ -2,8 +2,8 @@ E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\TaoLa.IServices.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\TaoLa.IServices.pdb
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\Himall.Entity.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\Himall.Model.dll
-E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\EntityFramework.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\TaoLa.Core.dll
+E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\EntityFramework.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\Newtonsoft.Json.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\System.Web.Mvc.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\zxing.dll
@@ -28,4 +28,3 @@ E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\zh-Hans\System.Web.WebPages.Deployme
 E:\Alex\TaoLaMall\TaoLa.IServices\obj\Debug\TaoLa.IServices.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.IServices\obj\Debug\TaoLa.IServices.dll
 E:\Alex\TaoLaMall\TaoLa.IServices\obj\Debug\TaoLa.IServices.pdb
-E:\Alex\TaoLaMall\TaoLa.IServices\bin\Debug\Himall.Core.dll

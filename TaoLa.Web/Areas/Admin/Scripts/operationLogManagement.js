@@ -6,7 +6,7 @@ $(function () {
 })
 
 function query() {
-    $("#list").hiMallDatagrid({
+    $("#list").TaoLaDatagrid({
         url: './list',
         nowrap: false,
         rownumbers: true,

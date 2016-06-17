@@ -33,4 +33,3 @@ E:\Alex\TaoLaMall\TaoLa.ServiceProvider\bin\Debug\zh-Hans\System.Web.WebPages.De
 E:\Alex\TaoLaMall\TaoLa.ServiceProvider\obj\Debug\TaoLa.ServiceProvider.csprojResolveAssemblyReference.cache
 E:\Alex\TaoLaMall\TaoLa.ServiceProvider\obj\Debug\TaoLa.ServiceProvider.dll
 E:\Alex\TaoLaMall\TaoLa.ServiceProvider\obj\Debug\TaoLa.ServiceProvider.pdb
-E:\Alex\TaoLaMall\TaoLa.ServiceProvider\bin\Debug\Himall.Core.dll

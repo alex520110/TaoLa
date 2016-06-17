@@ -9,7 +9,7 @@ namespace TaoLa.IServices
 {
     public interface IPrivilegesService : IService, IDisposable
     {
-        //   void AddPlatformRole(RoleInfo model);
+        void AddPlatformRole(RoleInfo model);
 
         // void AddSellerRole(RoleInfo model);
 
@@ -17,9 +17,13 @@ namespace TaoLa.IServices
 
         //   void UpdateSellerRole(RoleInfo model);
 
-        // void DeletePlatformRole(long id);
-
-        // RoleInfo GetPlatformRole(long id);
+        void DeletePlatformRole(long id);
+        /// <summary>
+        /// 根据id 获取平台角色
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        RoleInfo GetPlatformRole(long id);
 
         // RoleInfo GetSellerRole(long id, long shopId);
 

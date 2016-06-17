@@ -25,9 +25,6 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Himall.Core">
-      <HintPath>..\Himall.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -312,6 +309,12 @@
     <Compile Include="Himall.Model\WX_MsgTemplateRefundDataModel.cs" />
     <Compile Include="Himall.Model\WX_MsgTemplateSendDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaoLa.Core\TaoLa.Core.csproj">
+      <Project>{dc89a927-e63a-4f55-a0ac-6a138f52d07b}</Project>
+      <Name>TaoLa.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
