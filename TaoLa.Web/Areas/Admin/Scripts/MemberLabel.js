@@ -35,7 +35,7 @@
 function GetData()
 {
     var labelname = $('#txtLabelName').val();
-    $("#list").hiMallDatagrid({
+    $("#list").TaoLaDatagrid({
         url: './list',
         nowrap: false,
         rownumbers: true,

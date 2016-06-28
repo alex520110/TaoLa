@@ -733,6 +733,10 @@
     <Content Include="Areas\Admin\Views\Agreement\Management.cshtml" />
     <Content Include="Areas\Admin\Views\member\Management.cshtml" />
     <Content Include="Areas\Admin\Views\member\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\Label\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\Label\Label.cshtml" />
+    <Content Include="Areas\Admin\Views\brand\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\brand\Verify.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1064,7 +1068,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AgreementController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BrandController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LabelController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ManagerController.cs" />
     <Compile Include="Areas\Admin\Controllers\MemberController.cs" />
@@ -1072,6 +1078,7 @@
     <Compile Include="Areas\Admin\Controllers\OperationLogController.cs" />
     <Compile Include="Areas\Admin\Controllers\PrivilegeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SiteSettingController.cs" />
+    <Compile Include="Areas\Admin\Models\BrandApplyModel.cs" />
     <Compile Include="Areas\Admin\Models\ManagerInfoModel.cs" />
     <Compile Include="Areas\Admin\Models\RoleInfoModel.cs" />
     <Compile Include="Areas\Admin\Models\SiteSettingModel.cs" />
@@ -1086,7 +1093,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AgreementModel.cs" />
+    <Compile Include="Models\BrandModel.cs" />
     <Compile Include="Models\DataGridModel.cs" />
+    <Compile Include="Models\LabelModel.cs" />
     <Compile Include="Models\MemberModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

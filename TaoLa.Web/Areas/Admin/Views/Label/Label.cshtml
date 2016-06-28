@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Label";
+}
+@model TaoLa.Web.Models.LabelModel
+<script type="text/javascript">
+    var isposting = false;
+    function successpost(data) {
+        isposting = false;
+        if (data.Success == true) {
+            $.dialog.tips("保存成功", function () {
+                window.location.href = "Management";//数据提交成功页面跳转
+            });
+        } else {
+            $.dialog.errorTips(data.msg);
+        }
+    }
+</script>
+<div class="container">
+    <ul class="nav nav-tabs-custom clearfix">
+        <strong>交易评价</strong>
+        <li><a href="Management">管理</a></li>
+        <li class="active"><a>@(Model.Id == 0 ? "新增" : "编辑")</a></li>
+
+    </ul>
+    <div class="friendly-reminder"><h5>您可在此处新建会员标签，标签名称不能超过15个字</h5></div>
+
+    <div class="search-box addTages-lp" id="search-box">
+        @using (Ajax.BeginForm("Label", "Label", null
+                    , new AjaxOptions { HttpMethod = "post", OnSuccess = "successpost" }, new { @class = "custom-inline" }))
+        {
+            if (Model.Id > 0)
+            {
+                <input type="hidden" name="Id" value="@Model.Id" />
+            }
+            <div class="form-group ">
+                <label class="label-inline" for="">标签名称</label>
+                @Html.TextBoxFor(e => e.LabelName, new { @class = "form-control input-ssm", id = "txtLabelName", value = Model.LabelName })
+                @Html.ValidationMessageFor(e => e.LabelName)
+            </div>
+            <br>
+            <button type="submit" id="saveButton" class="btn">保 存</button>
+        }
+    </div>
+</div>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+

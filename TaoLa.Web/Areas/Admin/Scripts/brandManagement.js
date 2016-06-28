@@ -58,7 +58,7 @@ function deleteApply(id) {
 
 
 function query() {
-    $("#list").hiMallDatagrid({
+    $("#list").TaoLaDatagrid({
         url: './list',
         nowrap: false,
         rownumbers: true,
@@ -125,7 +125,7 @@ function AutoComplete() {
 }
 
 function queryApply() {
-    $("#applyList").hiMallDatagrid({
+    $("#applyList").TaoLaDatagrid({
         url: './ApplyList',
         nowrap: false,
         rownumbers: true,
