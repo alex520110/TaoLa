@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="CacheKeyCollection.cs" />
     <Compile Include="IBrandService.cs" />
+    <Compile Include="ICashDepositsService.cs" />
+    <Compile Include="ICategoryService.cs" />
     <Compile Include="IManagerService.cs" />
     <Compile Include="IMemberLabelService.cs" />
     <Compile Include="IMemberService.cs" />

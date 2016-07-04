@@ -53,6 +53,8 @@
     <Compile Include="AttrComparer.cs" />
     <Compile Include="AttrValueComparer.cs" />
     <Compile Include="BrandService.cs" />
+    <Compile Include="CashDepositsService.cs" />
+    <Compile Include="CategoryService.cs" />
     <Compile Include="ManagerService.cs" />
     <Compile Include="MemberLabelService.cs" />
     <Compile Include="MemberService.cs" />
