@@ -737,6 +737,11 @@
     <Content Include="Areas\Admin\Views\Label\Label.cshtml" />
     <Content Include="Areas\Admin\Views\brand\Management.cshtml" />
     <Content Include="Areas\Admin\Views\brand\Verify.cshtml" />
+    <Content Include="Areas\Admin\Views\brand\Show.cshtml" />
+    <Content Include="Areas\Admin\Views\brand\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\brand\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Management.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1069,6 +1074,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AgreementController.cs" />
     <Compile Include="Areas\Admin\Controllers\BrandController.cs" />
+    <Compile Include="Areas\Admin\Controllers\categoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LabelController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
@@ -1077,8 +1083,11 @@
     <Compile Include="Areas\Admin\Controllers\MessageController.cs" />
     <Compile Include="Areas\Admin\Controllers\OperationLogController.cs" />
     <Compile Include="Areas\Admin\Controllers\PrivilegeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SiteSettingController.cs" />
+    <Compile Include="Areas\Admin\Helper\SpecificationHelper.cs" />
     <Compile Include="Areas\Admin\Models\BrandApplyModel.cs" />
+    <Compile Include="Areas\Admin\Models\BrandViewModel.cs" />
     <Compile Include="Areas\Admin\Models\ManagerInfoModel.cs" />
     <Compile Include="Areas\Admin\Models\RoleInfoModel.cs" />
     <Compile Include="Areas\Admin\Models\SiteSettingModel.cs" />
@@ -1139,6 +1148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\category\" />
     <Folder Include="Areas\SellerAdmin\Controllers\" />
     <Folder Include="Areas\SellerAdmin\Models\" />
     <Folder Include="Areas\SellerAdmin\Views\Shared\" />

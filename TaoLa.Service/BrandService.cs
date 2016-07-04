@@ -20,8 +20,9 @@ namespace TaoLa.Service
         public void AddBrand(BrandInfo model)
         {
             this.context.BrandInfo.Add(model);
-            this.context.SaveChanges();
+           // this.context.SaveChanges();
             model.Logo = this.MoveImages(model.Id, model.Logo, 0);
+            this.context.BrandInfo.Add(model);
             this.context.SaveChanges();
         }
 
